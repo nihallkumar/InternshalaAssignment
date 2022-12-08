@@ -2,6 +2,8 @@ require('dotenv').config()
 const express = require('express')
 const connectToMongo = require('./db');
 const cors = require('cors')
+const auth = require('./routes/auth');
+const cars = require('./routes/cars')
 
 connectToMongo();
 
@@ -17,8 +19,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use('/api/auth', require('./Routes/auth'));
-app.use('/api/cars', require('./routes/cars'));
+app.use('/api/auth', auth);
+app.use('/api/cars', cars);
 
 
 app.listen(port, () => {

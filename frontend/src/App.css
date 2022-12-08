@@ -1,0 +1,76 @@
+/* NAVBAR */
+/* .navbar{
+  position: sticky;
+  top: 0px;
+} */
+
+
+svg{
+  cursor: pointer;
+  /* margin-left: 10px; */
+}
+
+/* .svg-icons:nth-child(0)
+{
+  margin-left: 0px;
+} */
+
+
+/* HOME */
+.home
+{
+  margin-top: 130px;
+  text-align: center;
+}
+.home-description
+{
+  font-size: 25px;
+  
+}
+
+
+/* LOGIN */
+.login
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+.login-header
+{
+  margin-bottom: 20px;
+}
+
+/* SIGNUP */
+.signup
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+.signup-header
+{
+  margin-bottom: 20px;
+}
+.submit-btn
+{
+  margin-left: 38%;
+}
+
+
+/* ADD CAR */
+.addnewcar{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+}
+.addnewcar-header
+{
+  margin-bottom: 20px;
+}

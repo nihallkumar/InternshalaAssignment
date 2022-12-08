@@ -13,6 +13,10 @@ app.use(cors())
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.use('/api/auth', require('./Routes/auth'));
 app.use('/api/cars', require('./routes/cars'));
 

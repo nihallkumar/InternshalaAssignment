@@ -3,7 +3,7 @@ import CarContext from "./CarContext";
 
 const CarState = (props) => {
 
-    const host = "http://localhost:5000";
+    const host = "https://easy-rent.onrender.com";
 
     const carsinitial = [];
     const [cars, setCars] = useState(carsinitial)

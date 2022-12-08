@@ -23,7 +23,7 @@ function Signup() {
             alert("Password Didn't Matched");
         }
         else if (credentials.password === credentials.cpassword) {
-            const response = await fetch(`http://localhost:5000/api/auth/signup`, {
+            const response = await fetch(`https://easy-rent.onrender.com/api/auth/signup`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

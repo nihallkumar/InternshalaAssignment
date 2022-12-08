@@ -13,7 +13,7 @@ router.get('/allcars', async (req, res) => {
         res.json(cars);
 
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 })
@@ -26,7 +26,7 @@ router.get('/availablecars', async (req, res) => {
         res.json(cars);
 
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 })
@@ -52,7 +52,7 @@ router.get('/current', async (req, res) => {
         }
         res.json(newCars);
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 

@@ -17,7 +17,7 @@ router.get('/allusers', async (req, res) => {
 
 
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 })
@@ -61,7 +61,7 @@ router.post('/signup', [
         res.json({ success, token });
 
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 });
@@ -100,7 +100,7 @@ router.post('/login', [
         res.json({ success, token });
 
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 });
@@ -113,7 +113,7 @@ router.post('/getuser', fetchuser, async (req, res) => {
         const user = await User.findById(userId).select("-password");
         res.json(user);
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 })
@@ -124,7 +124,7 @@ router.post('/getuserid', async (req, res) => {
         const user = await User.findById(req.body.id);
         res.json(user);
     } catch (error) {
-        // console.log(error.message);
+        console.log(error.message);
         res.status(500).send("Internal Server Error");
     }
 })
